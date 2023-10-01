@@ -1,0 +1,10 @@
+version: '3'
+services:
+  check-yamafuru-calendar:
+    restart: always
+    image: 'check-yamafuru-calender'
+    container_name: 'check-yamafuru'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
